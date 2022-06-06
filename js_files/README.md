@@ -1,1 +1,1 @@
-# javaScript files
+# JavaScript files
