@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sorting.css" />
+
+    <title>Sorting Visualizer</title>
+  </head>
+
+  <body>
+    <div class="nav-container">
+      <h1 class="title" onclick="window.location.reload()">
+        <img src="logo1.png" alt="Sorting Visualizer" />
+      </h1>
+      <div class="navbar" id="navbar">
+        <a id="random" onclick="RenderScreen()">Generate array</a>
+        <span class="options">
+          <select name="select sort algorithm" id="menu" class="algo-menu">
+            <option value="0">Choose algorithm</option>
+            <option value="1">Bubble Sort</option>
+            <option value="2">Selection Sort</option>
+            <option value="3">Insertion Sort</option>
+            <option value="4">Merge Sort</option>
+            <option value="5">Quick Sort</option>
+          </select>
+        </span>
+        <span class="options">
+          <select name="select array size" id="menu" class="size-menu">
+            <option value="0">Array size</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+            <option value="60">60</option>
+            <option value="70">70</option>
+            <option value="80">80</option>
+            <option value="90">90</option>
+            <option value="100">100</option>
+          </select>
+        </span>
+        <span class="options">
+          <select name="speed of visualization" id="menu" class="speed-menu">
+            <option value="0">Speed</option>
+            <option value="0.5">0.50x</option>
+            <option value="0.75">0.75x</option>
+            <option value="1">1.00x</option>
+            <option value="2">2.00x</option>
+            <option value="4">4.00x</option>
+          </select>
+        </span>
+        <a class="start">Sort</a>
+        <a class="icon"><i class="fa fa-bars"></i></a>
+      </div>
+    </div>
+    <div class="center">
+      <div class="array"></div>
+    </div>
+
+    <!-- footer starts -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              Sorting Visualizer is a web application designed to better understand
+              sorting algorithms by displaying and visualizing them. In the
+              website you can find information and implementations in multiple
+              programming languages of more than 5 sorting algorithms,
+              categorized by their time and space complexity.
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-6">
+            <h6>Quick Links</h6>
+                <a href="mailto:mohit.s.rajput032997@gmail.com">Contact Us</a>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row"> 
+          <div>
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="https://www.facebook.com/Mohit997"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="https://twitter.com/mohit032997?t=hIZv-UGQLeyCtqUfNo8u9w&s=08"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a class="github" href="https://github.com/mohit032"><i class="fa fa-github"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="https://linkedin.com/mohitsinghrajput"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--footer ends-->
+
+    <script src="js_files/app.js"></script>
+    <script src="js_files/helper.js"></script>
+    <script src="js_files/sort-algorithms.js"></script>
+  </body>
+</html>
