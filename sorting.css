@@ -204,6 +204,11 @@ img {
     display: inline-block;
 }
 
+.connect {
+    align-content: center;
+    padding-bottom: 8px;
+}
+
 .site-footer .social-icons {
     text-align: center;
 }
